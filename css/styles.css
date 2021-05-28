@@ -119,9 +119,14 @@ footer {
 }
 /* SECTION HERO */
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
   background-color: var(--third-background-color);
 }
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -130,28 +135,78 @@ footer {
   color: var(--primary-white-color);
 }
 .hero-button {
+  padding: 10px 32px;
+  border: 1px solid var(--accent-color);
+  border-radius: 4px;
+  min-width: 200px;
+
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
+
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   cursor: pointer;
 }
 
 /* OTHER SECTION */
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .section-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+
+  text-align: center;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   color: var(--title-text-color);
 }
+
+/* Section our specifics */
+
 .specifics-list .description-title {
+  margin-top: 0;
+  margin-bottom: 10px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+}
+.specifics-list .list {
+  display: flex;
+}
+.specifics-list .list-item {
+  width: calc((100%-90px) / 3);
+}
+.specifics-list .list-item:not(:last-child),
+.our-works .list-item:not(:last-child) {
+  margin-right: 30px;
+}
+.specifics-list .description-text {
+  margin: 0;
+}
+
+/* Section our works */
+.our-works {
+  padding-bottom: 94px;
+}
+.our-works .list {
+  display: flex;
+}
+.our-works .list-item {
+  width: calc((100%-60px) / 2);
+}
+
+/* Section our team */
+
+.team-list .description {
+  margin-top: 10px;
 }
 .description-title {
   color: var(--title-text-color);
@@ -162,11 +217,25 @@ footer {
 
 .team-list .description-title,
 .team-list .description {
+  margin-bottom: 0;
   font-size: 16px;
   line-height: 1.19;
 }
 .team-list .description-title {
+  margin-top: 30px;
   font-weight: 500;
+}
+.team-list .list {
+  display: flex;
+}
+
+.team-list-item {
+  padding-bottom: 30px;
+  width: calc((100%-90px) / 4);
+  text-align: center;
+}
+.team-list-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 /* FOOTER */
