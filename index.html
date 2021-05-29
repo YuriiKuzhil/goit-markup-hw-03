@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="container header-container">
         <nav class="nav-container">
           <a href="" class="header-logo link"> <span>Web</span>Studio</a>
@@ -46,39 +46,41 @@
     <main>
       <!-- секция Герой -->
       <section class="hero">
-        <h1 class="hero-title">
-          Эффективные решения <br />
-          для вашего бизнеса
-        </h1>
-        <button type="button" class="hero-button">Заказать услугу</button>
+        <div class="container">
+          <h1 class="hero-title">
+            Эффективные решения <br />
+            для вашего бизнеса
+          </h1>
+          <button type="button" class="hero-button">Заказать услугу</button>
+        </div>
       </section>
       <!-- секция Наши особенности -->
       <section class="specifics-list section">
         <h2 class="section-title visually-hidden">Особенности</h2>
         <div class="container">
           <ul class="list">
-            <li class="list-item">
+            <li class="specifics-list-item">
               <h3 class="description-title">Внимание к деталям</h3>
               <p class="description-text">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
             </li>
-            <li class="list-item">
+            <li class="specifics-list-item">
               <h3 class="description-title">Пунктуальность</h3>
               <p class="description-text">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
               </p>
             </li>
-            <li class="list-item">
+            <li class="specifics-list-item">
               <h3 class="description-title">Планирование</h3>
               <p class="description-text">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
             </li>
-            <li class="list-item">
+            <li class="specifics-list-item">
               <h3 class="description-title">Современные технологии</h3>
               <p class="description-text">
                 Значимость этих проблем настолько очевидна, что реализация
@@ -93,22 +95,25 @@
         <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="list">
-            <li class="list-item">
+            <li class="works-list-item">
               <img
+                class="images"
                 src="./images/box1.jpg"
                 alt="Человек работает на клавиатуре с планшетом"
                 width="370"
               />
             </li>
-            <li class="list-item">
+            <li class="works-list-item">
               <img
+                class="images"
                 src="./images/box2.jpg"
                 alt="Человек работает с смартфоном и ноутбуком"
                 width="370"
               />
             </li>
-            <li class="list-item">
+            <li class="works-list-item">
               <img
+                class="images"
                 src="./images/box3.jpg"
                 alt="Человек рисует на графическом планшете"
                 width="370"
@@ -124,6 +129,7 @@
           <ul class="list">
             <li class="team-list-item">
               <img
+                class="images"
                 src="./images/product-designer.jpg"
                 alt="Фото сотрудника команды"
                 width="270"
@@ -133,6 +139,7 @@
             </li>
             <li class="team-list-item">
               <img
+                class="images"
                 src="./images/frontend-developer.jpg"
                 alt="Фото сотрудника команды"
                 width="270"
@@ -142,6 +149,7 @@
             </li>
             <li class="team-list-item">
               <img
+                class="images"
                 src="./images/marketing.jpg"
                 alt="Фото сотрудника команды"
                 width="270"
@@ -151,6 +159,7 @@
             </li>
             <li class="team-list-item">
               <img
+                class="images"
                 src="./images/designer.jpg"
                 alt="Фото сотрудника команды"
                 width="270"
@@ -162,19 +171,23 @@
         </div>
       </section>
     </main>
-    <footer>
-      <a href="" class="footer-logo link"> <span>Web</span>Studio</a>
-      <address class="address">
-        <p>г. Киев, пр-т Леси Украинки, 26</p>
-        <ul class="list">
-          <li>
-            <a href="mailto:info@example.com" class="link"> info@example.com</a>
-          </li>
-          <li>
-            <a href="tel:++380991111111" class="link">+38 099 111 11 11</a>
-          </li>
-        </ul>
-      </address>
+    <footer class="footer-section">
+      <div class="container">
+        <a href="" class="footer-logo link"> <span>Web</span>Studio</a>
+        <address class="address">
+          <p>г. Киев, пр-т Леси Украинки, 26</p>
+          <ul class="list">
+            <li class="address-list-item">
+              <a href="mailto:info@example.com" class="link">
+                info@example.com</a
+              >
+            </li>
+            <li class="address-list-item">
+              <a href="tel:++380991111111" class="link">+38 099 111 11 11</a>
+            </li>
+          </ul>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
